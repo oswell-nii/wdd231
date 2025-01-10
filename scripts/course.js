@@ -116,6 +116,7 @@ function displayCourses(filteredCourses) {
 
     // Calculate total credits dynamically
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    totalCreditsEl.textContent = `Total Credits: ${totalCredits}`;
 }
 
 // Filter courses by type
