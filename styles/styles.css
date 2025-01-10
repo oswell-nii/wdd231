@@ -8,7 +8,6 @@
 }
 
 
-
 header {
     background-color: var(--richBlack);
     display: flex;
@@ -33,7 +32,7 @@ h2 {
     font-weight: 700;
     font-style: normal;
     padding: 1rem;
-    background-color: var(--caribbeanCurrent);
+    background-color: var(--richBlack);
     color: #fff;
     border-radius: 10px 10px 0 0;
 }
@@ -65,7 +64,6 @@ h2 {
     display: flex;
     flex-direction: column;
     list-style: none;
-    max-width: 500px;
     background-color: var(--richBlack);
 }
 
@@ -99,16 +97,18 @@ figure {
 
 .somebtns ul{
     display: flex;
-    justify-content: space-between;
-    list-style: none;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
 }
 
 .somebtns ul a {
+    margin-top: 1rem;
     text-decoration: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: var(--richBlack);
     color: #fff;
 }
@@ -137,4 +137,8 @@ footer {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.completed {
+    background-color: #28a745;
 }

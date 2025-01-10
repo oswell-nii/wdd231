@@ -109,11 +109,13 @@ function displayCourses(filteredCourses) {
         }
 
         courseContainer.appendChild(courseItem);
+        courseItem.style.backgroundColor = course.completed ? '#78290F' : '#F0F0F0';
+        courseItem.style.color = course.completed ? '#fff' : '#000000';
+
     });
 
     // Calculate total credits dynamically
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
-    totalCreditsEl.textContent = `Total Credits: ${totalCredits}`;
 }
 
 // Filter courses by type

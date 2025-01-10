@@ -7,18 +7,33 @@
     .navigation {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         width: 100%;
+        background-color: var(--sienna);
     }
 
+    .navigation a {
+        display: block;
+        font-size: 1.2rem;
+    }
+    .navigation a:hover {
+        background-color: var(--richBlack);
+    }
 
     .firstDiv {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .courseContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }    
+    .courseNames ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .somebtns ul a {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
 }
