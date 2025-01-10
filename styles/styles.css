@@ -1,0 +1,140 @@
+:root {
+    --richBlack: #001524;
+    --caribbeanCurrent: #15616D;
+    --papayaWhip: #FFECD1;
+    --orange: #FF7D00;
+    --sienna: #78290F;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+header {
+    background-color: var(--richBlack);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+header img {
+    width: 80px;
+}
+
+h1 {
+    color: var(--papayaWhip);
+}
+
+h2 {
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 1rem;
+    background-color: var(--caribbeanCurrent);
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.card ul {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--papayaWhip);
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    max-width: 500px;
+    background-color: var(--richBlack);
+}
+
+.navigation a {
+    color: #FEFCFB;
+    text-decoration: none;
+    display: none;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open a {
+    display: block;
+}
+
+.card {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.card img {
+    width: 80%;
+}
+
+figure {
+    text-align: center;
+}
+
+.somebtns ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.somebtns ul a {
+    text-decoration: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--richBlack);
+    color: #fff;
+}
+.courseNames ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.courseNames ul li {
+    text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    background-color: var(--sienna);
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--richBlack);
+    color: #fff;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

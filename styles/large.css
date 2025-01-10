@@ -1,0 +1,24 @@
+/* Larger Views */
+@media screen and (min-width: 700px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    .firstDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .courseContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }    
+}
