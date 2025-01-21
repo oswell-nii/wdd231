@@ -74,7 +74,7 @@ picture img {
 }
 
 
-h3 {
+.some-cards h3 {
     background-color: var(--paledogwood);
     text-align: center;
     padding: 1rem;

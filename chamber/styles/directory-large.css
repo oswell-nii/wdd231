@@ -27,7 +27,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
-    .company-card {
+    .bizcard {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -38,12 +38,49 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .bizcardlist {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
+
+    /* Styles for the container in list view */
+.bizcardlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between rows */
+}
+
+/* Styles for each list item */
+.company-list-item {
+    display: flex;
+    flex-direction: row; /* Align content in a row */
+    justify-content: space-between; /* Space items horizontally */
+    align-items: center; /* Vertically center items */
+    padding: 10px;
+    border: 1px solid var(--border-color, #ccc); /* Optional: add a border */
+    background-color: var(--background-color, #f9f9f9); /* Optional: background color */
+}
+
+/* Styles for company name */
+.company-list-item h3 {
+    flex: 2; /* Allow more space for the name */
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Styles for details */
+.company-list-item p {
+    flex: 1; /* Adjust width for details */
+    margin: 0;
+    padding: 0 5px; /* Optional: Add spacing */
+    font-size: 0.9rem;
+}
+
+/* Links in list view */
+.company-list-item a {
+    color: var(--link-color, #0066cc);
+    text-decoration: none;
+}
+
+.company-list-item a:hover {
+    text-decoration: underline;
+}
+
     
 }
