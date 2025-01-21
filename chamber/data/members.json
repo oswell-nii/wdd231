@@ -1,0 +1,77 @@
+[
+    {
+      "name": "MTN Ghana",
+      "image": "images/mtn.png",
+      "address": "123 Innovation Lane, San Francisco, CA 94107",
+      "phone": "+1-415-555-0100",
+      "website": "https://www.techinnovators.com",
+      "membership_level": 3,
+      "industry": "Technology",
+      "founded": 2010
+    },
+    {
+      "name": "Hubtel Ghana",
+      "image": "images/hubtel.png",
+
+      "address": "456 Sustainability Ave, Portland, OR 97205",
+      "phone": "+1-503-555-0123",
+      "website": "https://www.greenearthsolutions.com",
+      "membership_level": 2,
+      "industry": "Environmental Services",
+      "founded": 2015
+    },
+    {
+      "name": "Ecobank Ghana",
+      "image": "images/ecobankgh.png",
+
+      "address": "789 Flavor Street, Austin, TX 78701",
+      "phone": "+1-512-555-0456",
+      "website": "https://www.urbaneats.com",
+      "membership_level": 1,
+      "industry": "Hospitality",
+      "founded": 2012
+    },
+    {
+      "name": "Cocobod",
+      "image": "images/cocobodgh.png",
+
+      "address": "321 Skyline Blvd, Denver, CO 80203",
+      "phone": "+1-720-555-0789",
+      "website": "https://www.skylinearchitects.com",
+      "membership_level": 3,
+      "industry": "Architecture and Design",
+      "founded": 2008
+    },
+    {
+      "name": "Bridge Hiring LLC",
+      "image": "images/bridgehiringllc.png",
+
+      "address": "654 Adventure Rd, Boulder, CO 80302",
+      "phone": "+1-303-555-0987",
+      "website": "https://www.peakperformancegear.com",
+      "membership_level": 2,
+      "industry": "Outdoor Equipment",
+      "founded": 2005
+    },
+    {
+      "name": "Airtel Ghana",
+      "image": "images/at.png",
+      "address": "987 Wellness Way, Seattle, WA 98101",
+      "phone": "+1-206-555-0654",
+      "website": "https://www.harmonyhealthclinic.com",
+      "membership_level": 1,
+      "industry": "Healthcare",
+      "founded": 2018
+    },
+    {
+      "name": "Melcom",
+      "image": "images/melcom.png",
+      "address": "258 Knowledge Dr, Boston, MA 02116",
+      "phone": "+1-617-555-0321",
+      "website": "https://www.brightmindsedu.com",
+      "membership_level": 3,
+      "industry": "Education",
+      "founded": 2000
+    }
+]
+  
