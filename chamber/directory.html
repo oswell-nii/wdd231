@@ -6,17 +6,16 @@
     <title>Directory Page</title>
     <meta name="description" content="Chamber of Commerce Directory Page">
     <meta name="author" content="Oswell Okine">
-    <meta property="og:title" content="Chamber of Commerce |Directory Page | WDD 231" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://oswell-nii.github.io/wdd231/chamber/directory.html" />
-    <meta property="og:image" content="https://i.imghippo.com/files/ExhU6852ojU.png" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta property="og:title" content="Chamber of Commerce |Directory Page | WDD 231">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oswell-nii.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://i.imghippo.com/files/ExhU6852ojU.png">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/directory.js" defer></script>
@@ -36,38 +35,50 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(min-width: 1200px)" srcset="images/hero-large.webp">
-                <source media="(min-width: 750px)" srcset="images/hero-large.webp">
-                <img src="images/hero-large.webp" alt="Independence Square - Accra">
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 750px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Independence Square - Accra">
             </picture>
         </div>
-        <h2 class="home-header">Home</h2>
+        <h1 class="home-header">Home</h1>
         <div class="some-cards">
-            <section class="events-card">
-                <h3>Events</h3>
+            <section>
+                <h2>Events</h2>
             </section>
             <section class="">
-                <h3>Current Weather</h3>
+                <h2>Current Weather</h2>
             </section>
             <section>
-                <h3>Weather Forecast</h3>
+                <h2>Weather Forecast</h2>
                 <label>Today: </label>
                 <label>Wednesday: </label>
                 <label>Thursday: </label>
             </section>
         </div>
         
-        <button id="grid">⏹️Grid</button>
-		<button id="list">📄List</button>
-
+        <div class="btn-container">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>    
+        </div>
+        
         <div class="cards">
             <section id="business-cards" class="bizcard">
-
+                <h2>Businesses</h2>
             </section>
         </div>
 
     </main>
     <footer>
+        <div>
+            <h3>Greater Accra Chamber of Commerce</h3>
+            <p>Accra - Ghana</p>
+            <p>info@greateraccracommerce.com</p>
+            
+        </div>
+        
+        <img src="images/facebook.svg" alt="facebook-icon">
+        <img src="images/twitter.svg" alt="twitter-icon">
+        <img src="images/insta.svg" alt="insta-icon">
         <p>© <span id="currentYear"></span> 🧑‍💻 Oswell Okine 🌍 Ghana</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>

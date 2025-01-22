@@ -2,9 +2,9 @@
     {
       "name": "MTN Ghana",
       "image": "images/mtn.png",
-      "address": "123 Innovation Lane, San Francisco, CA 94107",
-      "phone": "+1-415-555-0100",
-      "website": "https://www.techinnovators.com",
+      "address": "Scancom PLC, Plot OER 6. Independence Avenue,West Ridge, Accra",
+      "phone": "+233244300000",
+      "website": "https://mtn.com.gh/",
       "membership_level": 3,
       "industry": "Technology",
       "founded": 2010
@@ -12,10 +12,9 @@
     {
       "name": "Hubtel Ghana",
       "image": "images/hubtel.png",
-
-      "address": "456 Sustainability Ave, Portland, OR 97205",
-      "phone": "+1-503-555-0123",
-      "website": "https://www.greenearthsolutions.com",
+      "address": "63 Olympics St, Accra",
+      "phone": "030 700 0576",
+      "website": "https://hubtel.com/",
       "membership_level": 2,
       "industry": "Environmental Services",
       "founded": 2015
@@ -23,54 +22,51 @@
     {
       "name": "Ecobank Ghana",
       "image": "images/ecobankgh.png",
-
-      "address": "789 Flavor Street, Austin, TX 78701",
-      "phone": "+1-512-555-0456",
-      "website": "https://www.urbaneats.com",
+      "address": "Accra",
+      "phone": "+233578098135",
+      "website": "https://ecobank.com/gh/",
       "membership_level": 1,
-      "industry": "Hospitality",
+      "industry": "Banking",
       "founded": 2012
     },
     {
       "name": "Cocobod",
       "image": "images/cocobodgh.png",
-
-      "address": "321 Skyline Blvd, Denver, CO 80203",
-      "phone": "+1-720-555-0789",
-      "website": "https://www.skylinearchitects.com",
+      "address": "41 Kwame Nkrumah Ave, Accra",
+      "phone": "036 229 0537",
+      "website": "https://cocobod.gh/",
       "membership_level": 3,
-      "industry": "Architecture and Design",
+      "industry": "Agriculture",
       "founded": 2008
     },
     {
       "name": "Bridge Hiring LLC",
       "image": "images/bridgehiringllc.png",
-
-      "address": "654 Adventure Rd, Boulder, CO 80302",
-      "phone": "+1-303-555-0987",
-      "website": "https://www.peakperformancegear.com",
+      "address": "Awoshie, Accra",
+      "phone": "+233553474169",
+      "website": "https://bridgehiring.com/",
       "membership_level": 2,
-      "industry": "Outdoor Equipment",
+      "industry": "Outsource",
       "founded": 2005
     },
     {
       "name": "Airtel Ghana",
       "image": "images/at.png",
-      "address": "987 Wellness Way, Seattle, WA 98101",
-      "phone": "+1-206-555-0654",
-      "website": "https://www.harmonyhealthclinic.com",
+      "address": "Circle, Accra",
+      "phone": "+233561112777",
+      "website": "https://www.at.com.gh/home",
       "membership_level": 1,
-      "industry": "Healthcare",
+      "industry": "Telecommunication",
       "founded": 2018
     },
     {
       "name": "Melcom",
       "image": "images/melcom.png",
-      "address": "258 Knowledge Dr, Boston, MA 02116",
-      "phone": "+1-617-555-0321",
-      "website": "https://www.brightmindsedu.com",
+      "address": "Darkuman, Accra",
+      "phone": "+233596911818",
+      "website": "https://melcom.com/",
       "membership_level": 3,
-      "industry": "Education",
+      "industry": "Marketing",
       "founded": 2000
     }
 ]

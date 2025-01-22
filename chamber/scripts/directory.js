@@ -21,19 +21,20 @@ listButton.addEventListener("click", () => {
     renderCompanies("list");
 });
 
-// Fetch JSON data from an external file
-fetch('data/members.json')
-    .then(response => {
+// Async function to fetch JSON data
+async function fetchCompaniesData() {
+    try {
+        const response = await fetch('data/members.json');
         if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
+            throw new Error(`Network response was not ok: ${response.statusText}`);
         }
-        return response.json();
-    })
-    .then(companies => {
+        const companies = await response.json();
         companiesData = companies; // Store the data for rendering
         renderCompanies("grid"); // Render default grid view
-    })
-    .catch(error => console.error('Error fetching JSON:', error));
+    } catch (error) {
+        console.error('Error fetching JSON:', error);
+    }
+}
 
 // Function to render companies
 function renderCompanies(view) {
@@ -45,7 +46,7 @@ function renderCompanies(view) {
             const card = document.createElement('div');
             card.className = 'company-card';
 
-            const name = document.createElement('h2');
+            const name = document.createElement('h3');
             name.textContent = company.name;
 
             const content = document.createElement('div');
@@ -92,3 +93,6 @@ function renderCompanies(view) {
         }
     });
 }
+
+// Call the async function to fetch data
+fetchCompaniesData();
