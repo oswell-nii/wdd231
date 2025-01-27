@@ -1,0 +1,213 @@
+:root {
+    --licorice: #0B0014;
+    --wine: #773344;
+    --paledogwood: #E3B5A4;
+    --linen: #F5E9E2;
+    --indianred: #D44D5C;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header {
+    background-color: var(--licorice);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+header img {
+    width: 80px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--paledogwood);
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--licorice);
+}
+.navigation a {
+    color: #FEFCFB;
+    text-decoration: none;
+    display: none;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open a {
+    display: block;
+}
+
+
+
+.home-header {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.some-cards h2 {
+    background-color: var(--paledogwood);
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+.some-cards section {
+    border: var(--border);
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+}
+
+section label {
+    padding: 1rem;
+}
+
+
+.company-card {
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    margin: 20px 20px;
+    padding: 1rem;
+    gap: 16px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.company-card h1 {
+    text-align: center;
+}
+
+.cards img {
+    width: 60px;
+    object-fit: contain;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--licorice);
+    color: #fff;
+    padding: 1rem;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 50px;
+}
+
+button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+}
+
+/* Styles for the container in list view */
+.bizcardlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between rows */
+    }
+
+    /* Styles for each list item */
+    .company-list-item {
+        display: flex;
+        flex-direction: row; /* Align content in a row */
+        justify-content: space-between; /* Space items horizontally */
+        align-items: center; /* Vertically center items */
+        padding: 5px;
+        border: 1px solid var(--border-color, #ccc); /* Optional: add a border */
+        background-color: var(--background-color, #f9f9f9); /* Optional: background color */
+    }
+
+    /* Styles for company name */
+    .company-list-item h3 {
+        flex: 2; /* Allow more space for the name */
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    /* Styles for details */
+    .company-list-item p {
+        flex: 1; /* Adjust width for details */
+        margin: 0;
+        padding: 0.5px; /* Optional: Add spacing */
+        font-size: 0.5rem;
+    }
+
+    /* Links in list view */
+    .company-list-item a {
+        color: var(--link-color, #0066cc);
+        text-decoration: none;
+    }
+
+    .company-list-item a:hover {
+        text-decoration: underline;
+    }
+
+    picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer img{
+        background-color: #fff;
+        border: none;
+        margin-left: 1rem;
+        margin-bottom: 1.5rem;
+    }
