@@ -29,4 +29,47 @@ function displayResults(data) {
     weatherIcon.setAttribute('alt', desc);
 }
 
+const spotlightContainer = document.querySelector("#business-cards");
+const jsonUrl = "data/members.json";
+
+// Function to fetch JSON data and display spotlight cards
+async function fetchAndDisplaySpotlights() {
+    try {
+        // Fetch the JSON data
+        const response = await fetch(jsonUrl);
+        if (!response.ok) throw new Error("Failed to load JSON data");
+        const members = await response.json();
+
+        // Filter for gold (3) or silver (2) members
+        const eligibleMembers = members.filter(member => member.membership_level === 2 || member.membership_level === 3);
+
+        // Shuffle and select two or three random members
+        const shuffledMembers = eligibleMembers.sort(() => Math.random() - 0.5);
+        const spotlights = shuffledMembers.slice(0, 3);
+
+        // Generate and append spotlight cards
+        spotlights.forEach(member => {
+            const card = document.createElement("div");
+            card.classList.add("spotlight-card");
+
+            card.innerHTML = `
+                <img src="${member.image}" alt="${member.name} Logo">
+                <h3>${member.name}</h3>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p><strong>Membership Level:</strong> ${member.membership_level === 3 ? "Gold" : "Silver"}</p>
+            `;
+
+            spotlightContainer.appendChild(card);
+        });
+    } catch (error) {
+        console.error("Error fetching and displaying spotlights:", error);
+    }
+}
+
+// Call the function
+fetchAndDisplaySpotlights();
+
+
 apiFetch();

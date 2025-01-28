@@ -27,7 +27,7 @@
         <button type="button" id="menu" aria-label="menu"></button>
         <nav class="navigation">
             <a href="">Home</a>
-            <a href="">Directory</a>
+            <a href="https://oswell-nii.github.io/wdd231/chamber/directory.html">Directory</a>
             <a href="">Join</a>
             <a href="">Discover</a>
         </nav>
@@ -36,10 +36,11 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
-                <source media="(min-width: 750px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-small.webp" alt="Independence Square - Accra">
+                <source media="(min-width: 1000px)" srcset="images/accra-hero-large.webp">
+                <source media="(min-width: 750px)" srcset="images/accra-hero-medium.webp">
+                <img src="images/accra-hero-small.webp" alt="Independence Square - Accra">
             </picture>
+            <a href="#forecast" class="cta">Check the Forecast</a>
         </div>
         <h1 class="home-header">Home</h1>
         <div class="some-cards">
@@ -49,29 +50,25 @@
             <section class="">
                 <h2>Current Weather</h2>
                 <div id="current-weather">
+                    <img id="weather-icon" src="" alt="weather-icon">
                     <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
                     <p><strong>Description:</strong> <span id="current-desc"></span></p>
-                    <img id="weather-icon" src="" alt="">
                 </div>
             </section>
             <section>
                 <h2>Weather Forecast</h2>
                 <div id="forecast">
-                    <p><strong>Day 1:</strong> <span id="day1"></span></p>
-                    <p><strong>Day 2:</strong> <span id="day2"></span></p>
-                    <p><strong>Day 3:</strong> <span id="day3"></span></p>
+                    <p><strong>Today:</strong> <span id="day1"></span></p>
+                    <p><strong>Wednesday:</strong> <span id="day2"></span></p>
+                    <p><strong>Thursday:</strong> <span id="day3"></span></p>
                 </div>
             </section>
         </div>
         
-        <div class="btn-container">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>    
-        </div>
-        
         <div class="cards">
             <section id="business-cards" class="bizcard">
-                <h2>Businesses</h2>
+                <h2>Spotlight</h2>
+
             </section>
         </div>
 

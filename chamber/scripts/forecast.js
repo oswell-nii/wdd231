@@ -10,7 +10,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             console.log(data);
-            displayResults(data);
+            displayForecastResults(data);
         } else {
             throw Error(await response.text());
         }
@@ -19,8 +19,12 @@ async function apiFetch() {
     };
 }
 
-function displayResults(data) {
+function displayForecastResults(data) {
     console.log('hi Oswell');
+    dayOne.innerHTML = data.list[8].main.temp + '&deg;F'
+    dayTwo.innerHTML = data.list[16].main.temp + '&deg;F'
+    dayThree.innerHTML = data.list[24].main.temp + '&deg;F'
 }
 
 apiFetch();
+

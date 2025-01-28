@@ -13,6 +13,30 @@ main {
     margin-right: auto;
 }
 
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cta {
+    position: absolute;
+    right: 50px;
+    left: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--licorice);
+}    
+
 
 header {
     background-color: var(--licorice);
@@ -210,4 +234,30 @@ button {
         border: none;
         margin-left: 1rem;
         margin-bottom: 1.5rem;
+    }
+
+    .spotlight-card {
+        border: var(--border);
+        border-radius: 15px;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: var(--linen);
+    }
+
+   
+    .bizcard h2 {
+        grid-column: 1 / -1; /* Make the <h2> span the entire width of the grid */
+        font-family: "Ubuntu", serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 1rem 0; /* Add space above and below */
+        background-color: var(--wine);
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: emphasize */
+        margin-top: 5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
