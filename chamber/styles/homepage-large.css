@@ -103,6 +103,12 @@
         color: var(--licorice);
         width: 20%;
         
-    }    
+    }
+    .navigation a:hover {
+        background-color: #1282A2;
+        border-radius: 50px;
+        transition: 0.5s;
+        transform: scale(1.15);
+    }
     
 }
