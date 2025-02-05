@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Chamber of Commerce Site</title>
+    <meta name="description" content="Chamber of Commerce Join Page">
+    <meta name="author" content="Oswell Okine">
+    <meta property="og:title" content="Chamber of Commerce |Join Page | WDD 231">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oswell-nii.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://i.imghippo.com/files/ExhU6852ojU.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/commercelogo.png" alt="Oswell Okine Potrait">
+        <button type="button" id="menu" aria-label="menu"></button>
+        <nav class="navigation">
+            <a href="https://oswell-nii.github.io/wdd231/chamber/">Home</a>
+            <a href="https://oswell-nii.github.io/wdd231/chamber/directory.html">Directory</a>
+            <a href="https://oswell-nii.github.io/wdd231/chamber/join.html">Join</a>
+            <a href="">Discover</a>
+        </nav>
+    </header>
+    
+    <main> 
+        <h1>Membership Application Form</h1>
+        <div class="container">
+            <form action="thankyou.html" method="get" class="wf">
+                <label for="firstName">Applicant's First Name:</label>
+                <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required>
+    
+                <label for="lastName">Applicant's Last Name:</label>
+                <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required>
+    
+                <label for="orgTitle">Applicant's Organizational Title:</label>
+                <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="^[a-zA-Z\- ]{7,}$" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="e.g., john.doe@example.com" required>
+    
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+    
+                <label for="orgName">Business/Organization's Name:</label>
+                <input type="text" id="orgName" name="orgName" title="Business/Organization Name" autocomplete="organization" required>
+    
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" title="Membership Level" required>
+                    <option value="" disabled selected>Choose Membership Level ...</option>
+                    <option value="np">NP Membership (Non-Profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                
+    
+                <label for="description">Business/Organization's Description:</label>
+                <textarea id="description" name="description" title="Business/Organization Description"></textarea>
+    
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+    
+                <input type="submit" value="Submit Application">
+            </form>
+    
+            <div class="card-container">
+                <div class="card" onclick="openModal('npModal')">
+                    <h3>NP Membership</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="card" onclick="openModal('bronzeModal')">
+                    <h3>Bronze Membership</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="card" onclick="openModal('silverModal')">
+                    <h3>Silver Membership</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="card" onclick="openModal('goldModal')">
+                    <h3>Gold Membership</h3>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('npModal')">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <p>Benefits for Non-Profit Organizations</p>
+            </div>
+        </div>
+    
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>Benefits for Bronze Members</p>
+            </div>
+        </div>
+    
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silverModal')">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>Benefits for Silver Members</p>
+            </div>
+        </div>
+    
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('goldModal')">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>Benefits for Gold Members</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h3>Greater Accra Chamber of Commerce</h3>
+            <p>Accra - Ghana</p>
+            <p>info@greateraccracommerce.com</p>
+            
+        </div>
+        
+        <img src="images/facebook.svg" alt="facebook-icon">
+        <img src="images/twitter.svg" alt="twitter-icon">
+        <img src="images/insta.svg" alt="insta-icon">
+        <p>© <span id="currentYear"></span> 🧑‍💻 Oswell Okine 🌍 Ghana</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

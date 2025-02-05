@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory Page - Chamber of Commerce Site</title>
-    <meta name="description" content="Chamber of Commerce Directory Page">
+    <title>ThankYou - Chamber of Commerce Site</title>
+    <meta name="description" content="Chamber of Commerce ThankYou Page">
     <meta name="author" content="Oswell Okine">
-    <meta property="og:title" content="Chamber of Commerce |Directory Page | WDD 231">
+    <meta property="og:title" content="Chamber of Commerce |ThankYou Page | WDD 231">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://oswell-nii.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://oswell-nii.github.io/wdd231/chamber/join.html">
     <meta property="og:image" content="https://i.imghippo.com/files/ExhU6852ojU.png">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,41 +33,17 @@
         </nav>
     </header>
     
-    <main>
-        <div class="hero">
-            <picture>
-                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
-                <source media="(min-width: 750px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-small.webp" alt="Independence Square - Accra">
-            </picture>
-        </div>
-        <h1 class="home-header">Home</h1>
-        <div class="some-cards">
-            <section>
-                <h2>Events</h2>
-            </section>
-            <section class="">
-                <h2>Current Weather</h2>
-            </section>
-            <section>
-                <h2>Weather Forecast</h2>
-                <label>Today: </label>
-                <label>Wednesday: </label>
-                <label>Thursday: </label>
-            </section>
-        </div>
-        
-        <div class="btn-container">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>    
-        </div>
-        
-        <div class="cards">
-            <section id="business-cards" class="bizcard">
-                <h2>Businesses</h2>
-            </section>
-        </div>
-
+    <main> 
+        <h1>Thank You!</h1>
+        <p>Dear <span id="firstName"></span> <span id="lastName"></span>,</p>
+        <p>Thank you for submitting your membership application. Here are your details:</p>
+        <ul>
+            <li><strong>Email:</strong> <span id="email"></span></li>
+            <li><strong>Phone:</strong> <span id="phone"></span></li>
+            <li><strong>Business/Organization:</strong> <span id="orgName"></span></li>
+            <li><strong>Submitted on:</strong> <span id="timestamp"></span></li>
+        </ul>
+        <p>We will review your application and get back to you soon.</p>
     </main>
     <footer>
         <div>
