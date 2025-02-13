@@ -1,0 +1,153 @@
+:root {
+    --licorice: #0B0014;
+    --wine: #773344;
+    --paledogwood: #E3B5A4;
+    --linen: #F5E9E2;
+    --indianred: #D44D5C;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header {
+    background-color: var(--licorice);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+header img {
+    width: 80px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--paledogwood);
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--licorice);
+}
+.navigation a {
+    color: #FEFCFB;
+    text-decoration: none;
+    display: none;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open a {
+    display: block;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 20px;
+    padding: 1rem;
+}
+
+.card:nth-child(1) { grid-area: card1; }
+.card:nth-child(2) { grid-area: card2; }
+.card:nth-child(3) { grid-area: card3; }
+.card:nth-child(4) { grid-area: card4; }
+.card:nth-child(5) { grid-area: card5; }
+.card:nth-child(6) { grid-area: card6; }
+.card:nth-child(7) { grid-area: card7; }
+.card:nth-child(8) { grid-area: card8; }
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevents image from creating extra space */
+    margin-bottom: 10px;
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card button {
+    background-color: var(--licorice);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#visit-message {
+    background-color: var(--wine);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--licorice);
+    color: #fff;
+    padding: 1rem;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer img{
+    background-color: #fff;
+    border: none;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
