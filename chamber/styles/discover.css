@@ -65,6 +65,21 @@ header img {
     display: block;
 }
 
+h1 {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
 
 .gallery {
     display: grid;
@@ -132,6 +147,9 @@ header img {
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 
