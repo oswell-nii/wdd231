@@ -1,0 +1,214 @@
+:root {
+    --oxfordblue: #011638;
+    --spacecadet: #2E294E;
+    --paledogwood: #E3B5A4;
+    --purpureus: #9055A2;
+    --lilac: #D499B9;
+    --tearose: #E8C1C5;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 950px;
+    margin: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--oxfordblue);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+header img {
+    width: 80px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--paledogwood);
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--oxfordblue);
+}
+.navigation a {
+    color: #FEFCFB;
+    text-decoration: none;
+    display: none;
+    padding: 1rem;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open a {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--oxfordblue);
+    color: #fff;
+    padding: 1rem;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer img{
+    background-color: #fff;
+    border: none;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center;
+    gap: 20px;
+}
+
+form {
+    width: 450px; /* Adjust as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Ubuntu", serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: calc(100% - 12px); /* Account for padding and border */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+.card-container {
+    margin-top: 2rem;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer; /* Indicate clickable card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1s ease forwards; /* Fade in animation */
+    margin-bottom: 20px; /* Add some spacing between cards */
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Move slightly down initially */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+.card:nth-child(4) { animation-delay: 0.8s; }
+
+.card:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wf input[type="submit"] {
+    background-color: var(--purpureus);
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+}

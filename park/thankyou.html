@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankYou - Chamber of Commerce Site</title>
+    <meta name="description" content="Chamber of Commerce ThankYou Page">
+    <meta name="author" content="Oswell Okine">
+    <meta property="og:title" content="Chamber of Commerce |ThankYou Page | WDD 231">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oswell-nii.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://i.imghippo.com/files/ExhU6852ojU.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/commercelogo.png" alt="Oswell Okine Potrait">
+        <button type="button" id="menu" aria-label="menu"></button>
+        <nav class="navigation">
+            <a href="https://oswell-nii.github.io/wdd231/chamber/">Home</a>
+            <a href="https://oswell-nii.github.io/wdd231/chamber/directory.html">Directory</a>
+            <a href="https://oswell-nii.github.io/wdd231/chamber/join.html">Join</a>
+            <a href="">Discover</a>
+        </nav>
+    </header>
+    
+    <main> 
+        <h1>Thank You!</h1>
+        <p>Dear <span id="firstName"></span> <span id="lastName"></span>,</p>
+        <p>Thank you for submitting your membership application. Here are your details:</p>
+        <ul>
+            <li><strong>Email:</strong> <span id="email"></span></li>
+            <li><strong>Phone:</strong> <span id="phone"></span></li>
+            <li><strong>Business/Organization:</strong> <span id="orgName"></span></li>
+            <li><strong>Submitted on:</strong> <span id="timestamp"></span></li>
+        </ul>
+        <p>We will review your application and get back to you soon.</p>
+    </main>
+    <footer>
+        <div>
+            <h3>Greater Accra Chamber of Commerce</h3>
+            <p>Accra - Ghana</p>
+            <p>info@greateraccracommerce.com</p>
+            
+        </div>
+        
+        <img src="images/facebook.svg" alt="facebook-icon">
+        <img src="images/twitter.svg" alt="twitter-icon">
+        <img src="images/insta.svg" alt="insta-icon">
+        <p>© <span id="currentYear"></span> 🧑‍💻 Oswell Okine 🌍 Ghana</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Page - Ghana National Parks Site</title>
+    <meta name="description" content="Ghana National Parks Explore Page">
+    <meta name="author" content="Oswell Okine">
+    <meta property="og:title" content="National Park |Explore Page | WDD 231">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oswell-nii.github.io/wdd231/park/explore.html">
+    <meta property="og:image" content="https://i.imghippo.com/files/ExhU6852ojU.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/explore.css">
+    <link rel="stylesheet" href="styles/explore-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/explore.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/flaggh.png" alt="Oswell Okine Potrait">
+        <button type="button" id="menu" aria-label="menu"></button>
+        <nav class="navigation">
+            <a href="https://oswell-nii.github.io/wdd231/park/">Home</a>
+            <a href="https://oswell-nii.github.io/wdd231/park/explore.html">Explore</a>
+            <a href="https://oswell-nii.github.io/wdd231/park/contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="home-header">Our Amazing Parks!</h1>         
+        <div class="gallery">             
+        </div> 
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Explore our Parks!</h2>
+            <img id="modal-image" src="images/aburi-gardens.webp" alt="" width="300" height="200">
+            <p id="modal-description"></p>
+            <address id="modal-address"></address>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h3>Greater Accra Chamber of Commerce</h3>
+            <p>Accra - Ghana</p>
+            <p>info@greateraccracommerce.com</p>
+            
+        </div>
+        
+        <img src="images/facebook.svg" alt="facebook-icon">
+        <img src="images/twitter.svg" alt="twitter-icon">
+        <img src="images/insta.svg" alt="insta-icon">
+        <p>© <span id="currentYear"></span> 🧑‍💻 Oswell Okine 🌍 Ghana</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ghana National Parks Site</title>
+    <meta name="description" content="Ghana National Parks Contact Page">
+    <meta name="author" content="Oswell Okine">
+    <meta property="og:title" content="National Park |Contact Page | WDD 231">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oswell-nii.github.io/wdd231/park/contact.html">
+    <meta property="og:image" content="https://i.imghippo.com/files/ExhU6852ojU.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/flaggh.png" alt="Oswell Okine Potrait">
+        <button type="button" id="menu" aria-label="menu"></button>
+        <nav class="navigation">
+            <a href="https://oswell-nii.github.io/wdd231/park/">Home</a>
+            <a href="https://oswell-nii.github.io/wdd231/park/explore.html">Explore</a>
+            <a href="https://oswell-nii.github.io/wdd231/park/contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main> 
+        <h1>Contact Us!</h1>
+        <div class="container">
+            <form action="thankyou.html" method="get" class="wf">
+                <label for="firstName">Applicant's First Name:</label>
+                <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required>
+    
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="e.g., john.doe@example.com" required>
+    
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                
+    
+                <label for="description">Business/Organization's Description:</label>
+                <textarea id="description" name="description" title="Business/Organization Description"></textarea>
+    
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+    
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+    
+    </main>
+    <footer>
+        <div>
+            <h3>Greater Accra Chamber of Commerce</h3>
+            <p>Accra - Ghana</p>
+            <p>info@greateraccracommerce.com</p>
+            
+        </div>
+        
+        <img src="images/facebook.svg" alt="facebook-icon">
+        <img src="images/twitter.svg" alt="twitter-icon">
+        <img src="images/insta.svg" alt="insta-icon">
+        <p>© <span id="currentYear"></span> 🧑‍💻 Oswell Okine 🌍 Ghana</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

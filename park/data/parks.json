@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Makola Market",
+        "image": "images/makola.webp",
+        "address": "Kojokrom Street, Accra",
+        "description": "A bustling market in the heart of Accra, known for its wide variety of goods and vibrant atmosphere."
+    },
+    {
+        "name": "Kwame Nkrumah Mausoleum",
+        "image": "images/kwame-nkrumah-memorial-park.webp",
+        "address": "High Street, Accra",
+        "description": "The final resting place of Ghana's first president, Kwame Nkrumah, a symbol of Pan-Africanism."
+    },
+    {
+        "name": "National Museum of Ghana",
+        "image": "images/national-museum-of-ghana.webp",
+        "address": "Barnes Road, Accra",
+        "description": "Showcases Ghana's rich cultural heritage through artifacts, exhibits, and art."
+    },
+    {
+        "name": "Independence Square",
+        "image": "images/Independence_Arch-1.webp",
+        "address": "Osu, Accra",
+        "description": "A significant landmark where Ghana declared its independence, featuring the Black Star Gate."
+    },
+    {
+        "name": "Labadi Beach",
+        "image": "images/labadi-beach.webp",
+        "address": "Labadi, Accra",
+        "description": "A popular beach resort offering relaxation, entertainment, and stunning views of the Atlantic Ocean."
+    },
+    {
+        "name": "Aburi Botanical Gardens",
+        "image": "images/aburi-gardens.webp",
+        "address": "Aburi, Eastern Region (near Accra)",
+        "description": "Beautiful gardens with diverse flora and fauna, offering a peaceful escape from the city."
+    },
+    {
+        "name": "Art Centre",
+        "image": "images/art-center.webp",
+        "address": "High Street, Accra",
+        "description": "A hub for local artists and craftspeople, showcasing and selling traditional Ghanaian arts and crafts."
+    },
+    {
+        "name": "Osu Castle (Christiansborg Castle)",
+        "image": "images/osu-castle.webp",
+        "address": "Osu, Accra",
+        "description": "A historic castle with a rich and complex past, serving as a former slave trading post and presidential residence."
+    },
+    {
+        "name": "Kakum National Park",
+        "image": "images/kakum.webp",
+        "address": "Cape Coast, Central Region",
+        "description": "A national park with a diverse range of wildlife, including the famous canopy walkway."
+    },
+    {
+        "name": "Mole National Park",
+        "image": "images/mole.webp",
+        "address": "Damongo, Northern Region",
+        "description": "Ghana's largest national park, home to elephants, buffalo, antelopes, and various bird species."
+    },
+    {
+        "name": "Ankasa Conservation Area",
+        "image": "images/ankasa.webp",
+        "address": "Axim, Western Region",
+        "description": "A biodiversity hotspot with dense rainforest, offering opportunities for hiking and wildlife viewing."
+    },
+    {
+        "name": "Shai Hills Resource Reserve",
+        "image": "images/shai.webp",
+        "address": "Shai Hills, Greater Accra Region",
+        "description": "A reserve with rocky hills, caves, and diverse wildlife, easily accessible from Accra."
+    },
+    {
+        "name": "Bia National Park",
+        "image": "images/bia.webp",
+        "address": "Bia, Western Region",
+        "description": "A UNESCO Biosphere Reserve, known for its pristine rainforest and chimpanzee population."
+    },
+    {
+        "name": "Tafi Atome Monkey Sanctuary",
+        "image": "images/tafi.webp",
+        "address": "Tafi Atome, Volta Region",
+        "description": "A community-based sanctuary protecting Mona and Colobus monkeys in their natural habitat."
+    },
+    {
+        "name": "Wli Waterfalls",
+        "image": "images/wli.webp",
+        "address": "Wli, Volta Region",
+        "description": "The highest waterfall in West Africa, cascading down a cliff face into a lush forest."
+    }
+]
